@@ -1,0 +1,173 @@
+/* tokens.css — Dar Aïcha custom Mediterranean design system */
+
+:root {
+  /* Type scale (fluid) */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+  --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+  --text-3xl: clamp(2.5rem, 1rem + 4vw, 4.5rem);
+  --text-hero: clamp(2.75rem, 0.5rem + 6vw, 6.5rem);
+
+  /* 4px spacing system */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.9rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-interactive: 200ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Content widths */
+  --content-narrow: 640px;
+  --content-default: 960px;
+  --content-wide: 1240px;
+  --content-full: 100%;
+
+  /* Fonts */
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'Work Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ===== LIGHT MODE (default) — warm sand, terracotta, olive, deep teal ===== */
+:root,
+[data-theme='light'] {
+  --color-bg: #f8f3ea;
+  --color-surface: #fdfbf6;
+  --color-surface-2: #ffffff;
+  --color-surface-offset: #f0e6d4;
+  --color-surface-offset-2: #e9dcc4;
+  --color-surface-dynamic: #e3d5b9;
+  --color-divider: #e2d5bd;
+  --color-border: #d8c8a8;
+
+  --color-text: #2c2418;
+  --color-text-muted: #6f6250;
+  --color-text-faint: #a89a82;
+  --color-text-inverse: #f8f3ea;
+
+  /* Primary accent — Terracotta */
+  --color-primary: #b1552e;
+  --color-primary-hover: #8f4222;
+  --color-primary-active: #713419;
+  --color-primary-highlight: #f0d8c9;
+
+  /* Secondary — Olive green */
+  --color-olive: #6b7a3a;
+  --color-olive-hover: #556130;
+  --color-olive-active: #414a25;
+  --color-olive-highlight: #dfe4cc;
+
+  /* Highlight — Deep teal (sea) */
+  --color-teal: #1f5c5c;
+  --color-teal-hover: #164545;
+  --color-teal-active: #0f3333;
+  --color-teal-highlight: #cee0df;
+
+  /* Gold accent for badges */
+  --color-gold: #c99a3b;
+  --color-gold-highlight: #f1e3c0;
+
+  --color-success: #4f7a2f;
+  --color-warning: #a1631f;
+  --color-error: #9c3b3b;
+
+  --shadow-sm: 0 1px 3px rgba(43, 33, 18, 0.08);
+  --shadow-md: 0 6px 20px rgba(43, 33, 18, 0.12);
+  --shadow-lg: 0 16px 40px rgba(43, 33, 18, 0.18);
+}
+
+/* ===== DARK MODE — deep olive-charcoal night ===== */
+[data-theme='dark'] {
+  --color-bg: #181410;
+  --color-surface: #1e1a14;
+  --color-surface-2: #241f18;
+  --color-surface-offset: #29241b;
+  --color-surface-offset-2: #322b20;
+  --color-surface-dynamic: #3a3225;
+  --color-divider: #362f24;
+  --color-border: #453c2c;
+
+  --color-text: #ece4d5;
+  --color-text-muted: #b3a690;
+  --color-text-faint: #7c714e;
+  --color-text-inverse: #201a12;
+
+  --color-primary: #e08350;
+  --color-primary-hover: #ec9e6f;
+  --color-primary-active: #f2b489;
+  --color-primary-highlight: #4a3324;
+
+  --color-olive: #a3b568;
+  --color-olive-hover: #b7c684;
+  --color-olive-active: #c9d59f;
+  --color-olive-highlight: #3a3d26;
+
+  --color-teal: #5fa3a1;
+  --color-teal-hover: #7fbab8;
+  --color-teal-active: #9dcccb;
+  --color-teal-highlight: #223938;
+
+  --color-gold: #e3ba5e;
+  --color-gold-highlight: #453b22;
+
+  --color-success: #8ab35f;
+  --color-warning: #d99a50;
+  --color-error: #d17a7a;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.55);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --color-bg: #181410;
+    --color-surface: #1e1a14;
+    --color-surface-2: #241f18;
+    --color-surface-offset: #29241b;
+    --color-surface-offset-2: #322b20;
+    --color-surface-dynamic: #3a3225;
+    --color-divider: #362f24;
+    --color-border: #453c2c;
+    --color-text: #ece4d5;
+    --color-text-muted: #b3a690;
+    --color-text-faint: #7c714e;
+    --color-text-inverse: #201a12;
+    --color-primary: #e08350;
+    --color-primary-hover: #ec9e6f;
+    --color-primary-active: #f2b489;
+    --color-primary-highlight: #4a3324;
+    --color-olive: #a3b568;
+    --color-olive-hover: #b7c684;
+    --color-olive-active: #c9d59f;
+    --color-olive-highlight: #3a3d26;
+    --color-teal: #5fa3a1;
+    --color-teal-hover: #7fbab8;
+    --color-teal-active: #9dcccb;
+    --color-teal-highlight: #223938;
+    --color-gold: #e3ba5e;
+    --color-gold-highlight: #453b22;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.55);
+  }
+}

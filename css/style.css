@@ -399,6 +399,11 @@ p + p { margin-top: var(--space-4); }
   transition: transform 300ms ease;
 }
 .gallery-grid img:hover { transform: scale(1.02); }
+.gallery-grid video {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
 .gallery-grid .tall { grid-row: span 2; }
 .gallery-grid .wide { grid-column: span 2; }
 

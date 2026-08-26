@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daraichatazarka.com/sitemap.xml

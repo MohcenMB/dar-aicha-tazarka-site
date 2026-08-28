@@ -473,6 +473,40 @@ p + p { margin-top: var(--space-4); }
 }
 .info-card svg { width: 30px; height: 30px; color: var(--color-primary); margin-bottom: var(--space-4); }
 
+/* ---------- Theme grid (privatisation use-cases) ---------- */
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+/* ---------- FAQ accordion ---------- */
+.faq-list { display: grid; gap: var(--space-3); }
+.faq-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5) var(--space-6);
+}
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  color: var(--color-primary);
+  font-size: var(--text-lg);
+  flex-shrink: 0;
+}
+.faq-item[open] summary::after { content: '−'; }
+.faq-item p { margin-top: var(--space-3); color: var(--color-text-muted); font-size: var(--text-sm); }
+
 /* ---------- Timeline (olive oil process) ---------- */
 .process-grid {
   display: grid;
@@ -643,6 +677,7 @@ p + p { margin-top: var(--space-4); }
   .amenities-grid { grid-template-columns: repeat(2, 1fr); }
   .card-grid { grid-template-columns: repeat(2, 1fr); }
   .process-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-8); }
+  .theme-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-8); }
   .booking-grid { grid-template-columns: 1fr; gap: var(--space-10); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--space-8); }
 }
@@ -658,6 +693,7 @@ p + p { margin-top: var(--space-4); }
   .amenities-grid { grid-template-columns: 1fr 1fr; }
   .card-grid { grid-template-columns: 1fr; }
   .process-grid { grid-template-columns: 1fr; }
+  .theme-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: var(--space-8); }
   .footer-bottom { flex-direction: column; gap: var(--space-2); align-items: flex-start; }
   .form-row { grid-template-columns: 1fr; }

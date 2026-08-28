@@ -86,7 +86,7 @@
 <!-- ============ HEADER ============ -->
 <header class="site-header">
   <div class="wrap">
-    <a href="#accueil" class="brand" aria-label="Dar Aïcha — Accueil">
+    <a href="#accueil" class="brand" data-i18n-aria="nav.brandAria" aria-label="Dar Aïcha — Accueil">
       <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
         <path d="M24 4C24 4 30 12 30 20C30 25.5 27.3 29 24 29C20.7 29 18 25.5 18 20C18 12 24 4 24 4Z" stroke="currentColor" stroke-width="1.6" fill="none"/>
         <path d="M24 29V44" stroke="currentColor" stroke-width="1.6"/>
@@ -100,25 +100,26 @@
       </span>
     </a>
 
-    <nav class="main-nav" data-main-nav aria-label="Navigation principale">
+    <nav class="main-nav" data-main-nav data-i18n-aria="nav.mainAria" aria-label="Navigation principale">
       <ul>
-        <li><a href="#villa">La Villa</a></li>
-        <li><a href="#espaces">Nos espaces</a></li>
-        <li><a href="#sejourner">Séjourner</a></li>
-        <li><a href="#evenements">Événements</a></li>
-        <li><a href="#privatisation">Privatisation</a></li>
-        <li><a href="#huile-olive">Huile d'olive</a></li>
-        <li><a href="#region">Propriété & Région</a></li>
-        <li><a href="#avis">Avis</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#villa" data-i18n="nav.villa">La Villa</a></li>
+        <li><a href="#espaces" data-i18n="nav.espaces">Nos espaces</a></li>
+        <li><a href="#sejourner" data-i18n="nav.sejourner">Séjourner</a></li>
+        <li><a href="#evenements" data-i18n="nav.evenements">Événements</a></li>
+        <li><a href="#privatisation" data-i18n="nav.privatisation">Privatisation</a></li>
+        <li><a href="#huile-olive" data-i18n="nav.huile">Huile d'olive</a></li>
+        <li><a href="#region" data-i18n="nav.region">Propriété & Région</a></li>
+        <li><a href="#avis" data-i18n="nav.avis">Avis</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
-      <a href="#reserver" class="btn btn--primary btn--sm">Réserver</a>
+      <a href="#reserver" class="btn btn--primary btn--sm" data-i18n="nav.reserver">Réserver</a>
     </nav>
 
     <div class="header-actions">
-      <button class="theme-toggle" data-theme-toggle aria-label="Changer de thème"></button>
-      <a href="#reserver" class="btn btn--primary btn--sm" style="display:inline-flex">Réserver</a>
-      <button class="nav-toggle" data-nav-toggle aria-label="Ouvrir le menu" aria-expanded="false">
+      <button class="lang-toggle" data-lang-toggle type="button" aria-label="Switch to English">EN</button>
+      <button class="theme-toggle" data-theme-toggle data-i18n-aria="nav.themeAria" aria-label="Changer de thème"></button>
+      <a href="#reserver" class="btn btn--primary btn--sm" style="display:inline-flex" data-i18n="nav.reserver">Réserver</a>
+      <button class="nav-toggle" data-nav-toggle data-i18n-aria="nav.menuAria" aria-label="Ouvrir le menu" aria-expanded="false">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
     </div>
@@ -130,35 +131,35 @@
 <!-- ============ HERO ============ -->
 <section class="hero" id="accueil">
   <div class="hero__bg">
-    <img src="assets/web/exterior/entree-villa-hero.jpg" alt="Allée d'entrée de la villa Dar Aïcha à Tazarka, architecture blanche contemporaine avec pierre locale, fronton gravé et jardin méditerranéen" fetchpriority="high">
+    <img src="assets/web/exterior/entree-villa-hero.jpg" alt="Allée d'entrée de la villa Dar Aïcha à Tazarka, architecture blanche contemporaine avec pierre locale, fronton gravé et jardin méditerranéen" data-i18n-alt="hero.imgAlt" fetchpriority="high">
   </div>
   <div class="hero__scrim"></div>
   <div class="hero__content">
     <div class="hero__badges">
-      <span class="badge">★ 4,88/5 · Superhost Airbnb</span>
-      <span class="badge">9,0/10 · Vrbo & Abritel</span>
-      <span class="badge">4 hectares · Oliveraie</span>
+      <span class="badge" data-i18n="hero.badge1">★ 4,88/5 · Superhost Airbnb</span>
+      <span class="badge" data-i18n="hero.badge2">9,0/10 · Vrbo & Abritel</span>
+      <span class="badge" data-i18n="hero.badge3">4 hectares · Oliveraie</span>
     </div>
-    <h1>Une villa d'exception face à la mer, au cœur du Cap Bon</h1>
-    <p class="hero__lede">9 suites, piscine à débordement et oliveraie à Tazarka — location saisonnière haut de gamme, maison d'hôtes et réceptions privées.</p>
+    <h1 data-i18n="hero.h1">Une villa d'exception face à la mer, au cœur du Cap Bon</h1>
+    <p class="hero__lede" data-i18n="hero.lede">9 suites, piscine à débordement et oliveraie à Tazarka — location saisonnière haut de gamme, maison d'hôtes et réceptions privées.</p>
     <div class="hero__actions">
-      <a href="#reserver" class="btn btn--primary">Demander un devis</a>
-      <a href="#villa" class="btn btn--outline" style="border-color: rgba(255,255,255,0.5); color:#fff;">Découvrir la villa</a>
+      <a href="#reserver" class="btn btn--primary" data-i18n="hero.cta1">Demander un devis</a>
+      <a href="#villa" class="btn btn--outline" style="border-color: rgba(255,255,255,0.5); color:#fff;" data-i18n="hero.cta2">Découvrir la villa</a>
     </div>
   </div>
-  <a href="#pillars" class="hero__scroll" aria-label="Défiler vers le bas">
+  <a href="#pillars" class="hero__scroll" data-i18n-aria="hero.scrollAria" aria-label="Défiler vers le bas">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-    Défiler
+    <span data-i18n="hero.scroll">Défiler</span>
   </a>
 </section>
 
 <!-- ============ QUICK STATS ============ -->
 <div class="stats-bar">
   <div class="wrap stats-grid" data-reveal>
-    <div class="stat"><b>9</b><span>Suites</span></div>
-    <div class="stat"><b>18–25</b><span>Personnes accueillies</span></div>
-    <div class="stat"><b>250</b><span>Invités en réception</span></div>
-    <div class="stat"><b>4 ha</b><span>Oliveraie</span></div>
+    <div class="stat"><b>9</b><span data-i18n="stats.suites">Suites</span></div>
+    <div class="stat"><b>18–25</b><span data-i18n="stats.people">Personnes accueillies</span></div>
+    <div class="stat"><b>250</b><span data-i18n="stats.guests">Invités en réception</span></div>
+    <div class="stat"><b>4 ha</b><span data-i18n="stats.olive">Oliveraie</span></div>
   </div>
 </div>
 
@@ -166,36 +167,36 @@
 <section id="pillars">
   <div class="wrap">
     <div class="section-head section-head--center" data-reveal>
-      <span class="kicker" style="justify-content:center">Trois façons de vivre Dar Aïcha</span>
-      <h2>Séjour, réception ou terroir</h2>
-      <p class="lede">Une propriété unique qui se découvre à votre rythme : location saisonnière exclusive, maison d'hôtes conviviale ou immersion dans notre production d'huile d'olive.</p>
+      <span class="kicker" style="justify-content:center" data-i18n="pillars.kicker">Trois façons de vivre Dar Aïcha</span>
+      <h2 data-i18n="pillars.h2">Séjour, réception ou terroir</h2>
+      <p class="lede" data-i18n="pillars.lede">Une propriété unique qui se découvre à votre rythme : location saisonnière exclusive, maison d'hôtes conviviale ou immersion dans notre production d'huile d'olive.</p>
     </div>
     <div class="pillars" data-reveal>
       <a href="#sejourner" class="pillar-card">
-        <img src="assets/web/pool/pool-04.jpg" alt="Piscine à débordement de la villa Dar Aïcha avec transats et vue dégagée">
+        <img src="assets/web/pool/pool-04.jpg" alt="Piscine à débordement de la villa Dar Aïcha avec transats et vue dégagée" data-i18n-alt="pillars.img1">
         <div class="pillar-card__scrim"></div>
         <div class="pillar-card__body">
-          <span class="pillar-card__tag">Location & séjour</span>
-          <h3>Séjourner à la villa</h3>
-          <p>Location saisonnière ou maison d'hôtes selon la saison, jusqu'à 25 personnes.</p>
+          <span class="pillar-card__tag" data-i18n="pillars.tag1">Location & séjour</span>
+          <h3 data-i18n="pillars.h3-1">Séjourner à la villa</h3>
+          <p data-i18n="pillars.p1">Location saisonnière ou maison d'hôtes selon la saison, jusqu'à 25 personnes.</p>
         </div>
       </a>
       <a href="#evenements" class="pillar-card">
-        <img src="assets/web/facebook/event-wedding-poolside.jpg" alt="Réception de mariage organisée au bord de la piscine de Dar Aïcha, décoration blanche et lumineuse au crépuscule">
+        <img src="assets/web/facebook/event-wedding-poolside.jpg" alt="Réception de mariage organisée au bord de la piscine de Dar Aïcha, décoration blanche et lumineuse au crépuscule" data-i18n-alt="pillars.img2">
         <div class="pillar-card__scrim"></div>
         <div class="pillar-card__body">
-          <span class="pillar-card__tag">Réceptions</span>
-          <h3>Événements & mariages</h3>
-          <p>Jusqu'à 250 invités pour vos mariages, fiançailles et fêtes privées.</p>
+          <span class="pillar-card__tag" data-i18n="pillars.tag2">Réceptions</span>
+          <h3 data-i18n="pillars.h3-2">Événements & mariages</h3>
+          <p data-i18n="pillars.p2">Jusqu'à 250 invités pour vos mariages, fiançailles et fêtes privées.</p>
         </div>
       </a>
       <a href="#huile-olive" class="pillar-card">
-        <img src="assets/web/olive-oil/product-duo-sunset.jpg" alt="Bouteilles d'huile d'olive Domaine Dar Aïcha, récoltée sur l'oliveraie Koroneiki de la propriété">
+        <img src="assets/web/olive-oil/product-duo-sunset.jpg" alt="Bouteilles d'huile d'olive Domaine Dar Aïcha, récoltée sur l'oliveraie Koroneiki de la propriété" data-i18n-alt="pillars.img3">
         <div class="pillar-card__scrim"></div>
         <div class="pillar-card__body">
-          <span class="pillar-card__tag">Notre marque</span>
-          <h3>Domaine Dar Aïcha</h3>
-          <p>Huile d'olive vierge extra Koroneiki, récoltée et pressée sur notre domaine de Tazarka.</p>
+          <span class="pillar-card__tag" data-i18n="pillars.tag3">Notre marque</span>
+          <h3 data-i18n="pillars.h3-3">Domaine Dar Aïcha</h3>
+          <p data-i18n="pillars.p3">Huile d'olive vierge extra Koroneiki, récoltée et pressée sur notre domaine de Tazarka.</p>
         </div>
       </a>
     </div>
@@ -206,20 +207,20 @@
 <section id="villa" class="section--offset">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <span class="kicker">La Villa</span>
-      <h2>Une architecture blanche entre tradition tunisoise et lignes contemporaines</h2>
-      <p class="lede">Bâtie sur un terrain agricole de 4 hectares, Dar Aïcha marie l'arc tunisois, la pierre locale et le confort moderne. Neuf suites, des espaces de vie généreux et une piscine à débordement tournée vers l'horizon.</p>
+      <span class="kicker" data-i18n="villa.kicker">La Villa</span>
+      <h2 data-i18n="villa.h2">Une architecture blanche entre tradition tunisoise et lignes contemporaines</h2>
+      <p class="lede" data-i18n="villa.lede">Bâtie sur un terrain agricole de 4 hectares, Dar Aïcha marie l'arc tunisois, la pierre locale et le confort moderne. Neuf suites, des espaces de vie généreux et une piscine à débordement tournée vers l'horizon.</p>
     </div>
 
     <div class="gallery-grid" data-reveal>
-      <img class="wide tall" src="assets/web/exterior/exterior-02-villa.jpg" alt="Vue frontale de la villa Dar Aïcha, façade blanche avec pierre dorée et allée pavée" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/pool/pool-01.jpg" alt="Piscine à débordement avec parasols et vue sur la campagne de Tazarka" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/living/living-02.jpg" alt="Salon spacieux aux tapis et coussins berbères colorés, grandes baies vitrées" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/exterior/exterior-12-archway-fountain.jpg" alt="Patio intérieur avec arche tunisoise et fontaine en zellige" data-lightbox-trigger loading="lazy">
-      <img class="wide" src="assets/web/facebook/aerial-cover.jpg" alt="Vue aérienne de la propriété Dar Aïcha, villa entourée de jardins et d'oliviers" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/rooms/chambre6-suite-02.jpg" alt="Suite Hssin avec lit double et décoration artisanale tunisienne" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/bathroom/bathroom-03-blue.jpg" alt="Salle de bain en zellige bleu traditionnel tunisien" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/dining/dining-01.jpg" alt="Salle à manger pouvant accueillir un grand nombre de convives" data-lightbox-trigger loading="lazy">
+      <img class="wide tall" src="assets/web/exterior/exterior-02-villa.jpg" alt="Vue frontale de la villa Dar Aïcha, façade blanche avec pierre dorée et allée pavée" data-i18n-alt="villa.img1" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/pool/pool-01.jpg" alt="Piscine à débordement avec parasols et vue sur la campagne de Tazarka" data-i18n-alt="villa.img2" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/living/living-02.jpg" alt="Salon spacieux aux tapis et coussins berbères colorés, grandes baies vitrées" data-i18n-alt="villa.img3" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/exterior/exterior-12-archway-fountain.jpg" alt="Patio intérieur avec arche tunisoise et fontaine en zellige" data-i18n-alt="villa.img4" data-lightbox-trigger loading="lazy">
+      <img class="wide" src="assets/web/facebook/aerial-cover.jpg" alt="Vue aérienne de la propriété Dar Aïcha, villa entourée de jardins et d'oliviers" data-i18n-alt="villa.img5" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/rooms/chambre6-suite-02.jpg" alt="Suite Hssin avec lit double et décoration artisanale tunisienne" data-i18n-alt="villa.img6" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/bathroom/bathroom-03-blue.jpg" alt="Salle de bain en zellige bleu traditionnel tunisien" data-i18n-alt="villa.img7" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/dining/dining-01.jpg" alt="Salle à manger pouvant accueillir un grand nombre de convives" data-i18n-alt="villa.img8" data-lightbox-trigger loading="lazy">
     </div>
   </div>
 </section>
@@ -228,25 +229,25 @@
 <section id="suites">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <span class="kicker">Hébergement</span>
-      <h2>9 suites, une offre unique</h2>
-      <p class="lede">Cinq suites de plain-pied et quatre suites à l'étage, toutes climatisées, avec salle de bain privative et décoration artisanale tunisienne — kilims, zellige, bois tourné. Même tarif, quel que soit l'emplacement de la suite.</p>
+      <span class="kicker" data-i18n="suites.kicker">Hébergement</span>
+      <h2 data-i18n="suites.h2">9 suites, une offre unique</h2>
+      <p class="lede" data-i18n="suites.lede">Cinq suites de plain-pied et quatre suites à l'étage, toutes climatisées, avec salle de bain privative et décoration artisanale tunisienne — kilims, zellige, bois tourné. Même tarif, quel que soit l'emplacement de la suite.</p>
     </div>
     <div class="suites-grid" data-reveal>
       <div class="suite-card">
-        <div class="suite-card__img"><img src="assets/web/rooms/chambre2-01.jpg" alt="Suite de la villa Dar Aïcha, lit double et linge blanc" loading="lazy"></div>
+        <div class="suite-card__img"><img src="assets/web/rooms/chambre2-01.jpg" alt="Suite de la villa Dar Aïcha, lit double et linge blanc" data-i18n-alt="suites.img1" loading="lazy"></div>
         <div class="suite-card__body">
-          <h3>Une suite</h3>
-          <p>9 suites climatisées avec salle de bain privative, au rez-de-jardin ou à l'étage avec accès à la terrasse panoramique.</p>
-          <div class="suite-card__price"><b>À partir de 255 TND</b><span>/ nuit, la suite (≈ 75 €)</span></div>
+          <h3 data-i18n="suites.h3-1">Une suite</h3>
+          <p data-i18n="suites.p1">9 suites climatisées avec salle de bain privative, au rez-de-jardin ou à l'étage avec accès à la terrasse panoramique.</p>
+          <div class="suite-card__price"><b data-i18n="suites.price1b">À partir de 255 TND</b><span data-i18n="suites.price1s">/ nuit, la suite (≈ 75 €)</span></div>
         </div>
       </div>
       <div class="suite-card">
-        <div class="suite-card__img"><img src="assets/web/rooms/chambre6-suite-02.jpg" alt="Suite Hssin de la villa Dar Aïcha, ambiance chaleureuse et artisanat local" loading="lazy"></div>
+        <div class="suite-card__img"><img src="assets/web/rooms/chambre6-suite-02.jpg" alt="Suite Hssin de la villa Dar Aïcha, ambiance chaleureuse et artisanat local" data-i18n-alt="suites.img2" loading="lazy"></div>
         <div class="suite-card__body">
-          <h3>Location de la villa entière</h3>
-          <p>Privatisez les 9 suites pour un séjour en famille ou entre amis, jusqu'à 25 personnes.</p>
-          <div class="suite-card__price"><b>Sur devis</b><span>tarif direct, sans commission de plateforme</span></div>
+          <h3 data-i18n="suites.h3-2">Location de la villa entière</h3>
+          <p data-i18n="suites.p2">Privatisez les 9 suites pour un séjour en famille ou entre amis, jusqu'à 25 personnes.</p>
+          <div class="suite-card__price"><b data-i18n="suites.price2b">Sur devis</b><span data-i18n="suites.price2s">tarif direct, sans commission de plateforme</span></div>
         </div>
       </div>
     </div>
@@ -257,53 +258,53 @@
 <section class="section--offset">
   <div class="wrap">
     <div class="section-head section-head--center" data-reveal>
-      <span class="kicker" style="justify-content:center">Équipements</span>
-      <h2>Tout le confort d'une grande maison méditerranéenne</h2>
+      <span class="kicker" style="justify-content:center" data-i18n="amenities.kicker">Équipements</span>
+      <h2 data-i18n="amenities.h2">Tout le confort d'une grande maison méditerranéenne</h2>
     </div>
     <div class="amenities-grid" data-reveal>
       <div class="amenity">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 17c1.5 1.3 3 1.3 4.5 0s3-1.3 4.5 0 3 1.3 4.5 0 3-1.3 4.5 0"/><path d="M2 12c1.5 1.3 3 1.3 4.5 0s3-1.3 4.5 0 3 1.3 4.5 0 3-1.3 4.5 0"/><path d="M6 8a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/></svg>
-        <span>Piscine à débordement</span>
+        <span data-i18n="amenities.a1">Piscine à débordement</span>
       </div>
       <div class="amenity">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-        <span>11 salles de bain</span>
+        <span data-i18n="amenities.a2">11 salles de bain</span>
       </div>
       <div class="amenity">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>
-        <span>Cuisine équipée</span>
+        <span data-i18n="amenities.a3">Cuisine équipée</span>
       </div>
       <div class="amenity">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
-        <span>Wi-Fi haut débit</span>
+        <span data-i18n="amenities.a4">Wi-Fi haut débit</span>
       </div>
       <div class="amenity">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 20V10a7 7 0 0 1 14 0v10"/><path d="M2 20h20"/></svg>
-        <span>Climatisation</span>
+        <span data-i18n="amenities.a5">Climatisation</span>
       </div>
       <div class="amenity">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 16V8h3.2a2.4 2.4 0 1 1 0 4.8H9"/></svg>
-        <span>Parking privé</span>
+        <span data-i18n="amenities.a6">Parking privé</span>
       </div>
       <div class="amenity">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C8 6 5 9 5 13a7 7 0 0 0 14 0c0-4-3-7-7-11z"/></svg>
-        <span>Jardin & oliveraie</span>
+        <span data-i18n="amenities.a7">Jardin & oliveraie</span>
       </div>
       <div class="amenity">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l5-16 5 16M8 12h2M15 4h5l-3 8h3l-5 8"/></svg>
-        <span>Poneys, volailles & moutons</span>
+        <span data-i18n="amenities.a8">Poneys, volailles & moutons</span>
       </div>
       <div class="amenity">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 13h16M6 13V9a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4M4 13v6M20 13v6M8 19v2M16 19v2"/></svg>
-        <span>Cuisine extérieure & bar BBQ</span>
+        <span data-i18n="amenities.a9">Cuisine extérieure & bar BBQ</span>
       </div>
       <div class="amenity">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M6 21h12M12 3a3 3 0 0 1 3 3M8 8l4-2 4 2"/></svg>
-        <span>Aire de jeux enfants (balancelles)</span>
+        <span data-i18n="amenities.a10">Aire de jeux enfants (balancelles)</span>
       </div>
       <div class="amenity">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        <span>Mini-bar & TV dans chaque suite</span>
+        <span data-i18n="amenities.a11">Mini-bar & TV dans chaque suite</span>
       </div>
     </div>
   </div>
@@ -313,42 +314,42 @@
 <section id="espaces" class="section--offset">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <span class="kicker">Nos espaces</span>
-      <h2>Une cuisine extérieure avec bar BBQ, des salons ouverts sur le patio</h2>
-      <p class="lede">Au-delà des suites, Dar Aïcha se vit dans ses espaces communs : la cuisine extérieure avec son comptoir de bar et son coin BBQ, la cuisine intérieure grande ouverte sur la piscine, les salons façon majlis tunisois, le patio central à la fontaine en zellige et un coin balancelles pour les enfants au bord de la piscine.</p>
+      <span class="kicker" data-i18n="espaces.kicker">Nos espaces</span>
+      <h2 data-i18n="espaces.h2">Une cuisine extérieure avec bar BBQ, des salons ouverts sur le patio</h2>
+      <p class="lede" data-i18n="espaces.lede">Au-delà des suites, Dar Aïcha se vit dans ses espaces communs : la cuisine extérieure avec son comptoir de bar et son coin BBQ, la cuisine intérieure grande ouverte sur la piscine, les salons façon majlis tunisois, le patio central à la fontaine en zellige et un coin balancelles pour les enfants au bord de la piscine.</p>
     </div>
 
     <div class="wrap feature" style="margin-top: var(--space-10);" data-reveal>
       <div class="feature__media">
-        <img src="assets/web/exterior-kitchen/exterior-kitchen-bar-wide.jpg" alt="Cuisine extérieure avec bar en marbre et coin BBQ, vue sur la campagne de Tazarka" loading="lazy">
+        <img src="assets/web/exterior-kitchen/exterior-kitchen-bar-wide.jpg" alt="Cuisine extérieure avec bar en marbre et coin BBQ, vue sur la campagne de Tazarka" data-i18n-alt="espaces.imgFeature" loading="lazy">
       </div>
       <div>
-        <span class="kicker">Cuisine extérieure & bar BBQ</span>
-        <h2>Le repaire idéal pour les repas en plein air</h2>
-        <p>Comptoir de bar en marbre, table assortie et coin barbecue abrité derrière une claustra en fer forgé : la cuisine extérieure prolonge le patio pour les grillades, l'apéritif et les repas en famille face à l'oliveraie.</p>
+        <span class="kicker" data-i18n="espaces.kicker2">Cuisine extérieure & bar BBQ</span>
+        <h2 data-i18n="espaces.h2b">Le repaire idéal pour les repas en plein air</h2>
+        <p data-i18n="espaces.p1">Comptoir de bar en marbre, table assortie et coin barbecue abrité derrière une claustra en fer forgé : la cuisine extérieure prolonge le patio pour les grillades, l'apéritif et les repas en famille face à l'oliveraie.</p>
         <ul class="feature__list">
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Bar en marbre et table extérieure assortie</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Coin barbecue équipé, évier et rangements</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Vue dégagée sur la campagne et l'oliveraie</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="espaces.li1">Bar en marbre et table extérieure assortie</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="espaces.li2">Coin barbecue équipé, évier et rangements</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="espaces.li3">Vue dégagée sur la campagne et l'oliveraie</span></li>
         </ul>
       </div>
     </div>
 
     <div class="gallery-grid" style="margin-top: var(--space-12);" data-reveal>
-      <img class="wide tall" src="assets/web/exterior-kitchen/exterior-kitchen-grill-sink.jpg" alt="Coin barbecue de la cuisine extérieure avec grill, évier et rangements en bois" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/exterior-kitchen/exterior-kitchen-view.jpg" alt="Cuisine extérieure vue depuis le bar, claustra en fer forgé" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/kitchen/kitchen-03-pool-view.jpg" alt="Cuisine intérieure grande ouverte sur la piscine et la terrasse" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/kitchen/kitchen-04-island-detail.jpg" alt="Îlot central de la cuisine en granit avec piano de cuisson 5 feux" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/kitchen/kitchen-01.jpg" alt="Table dressée avec vaisselle traditionnelle tunisienne en céramique" data-lightbox-trigger loading="lazy">
-      <img class="wide" src="assets/web/living/living-06-majlis-wide.jpg" alt="Salon majlis tunisois avec banquettes basses, coussins berbères et grandes baies vitrées" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/living/living-07-majlis-kitchen-view.jpg" alt="Salon ouvert sur la cuisine à travers une grande baie vitrée" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/living/living-03.jpg" alt="Grand salon aux tapis et fauteuils berbères colorés, sol en marbre" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/living/living-01.jpg" alt="Salon avec banquettes beiges, coussins brodés et rideaux voilés" data-lightbox-trigger loading="lazy">
-      <img class="wide" src="assets/web/patio/patio-02.jpg" alt="Patio central voûté avec fontaine en marbre et lustre artisanal" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/patio/patio-01-fountain.jpg" alt="Fontaine à étages du patio, vue en enfilade des arches jusqu'à la mer" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/patio/patio-03.jpg" alt="Patio et coin repas extérieur ombragé, colonnades en pierre" data-lightbox-trigger loading="lazy">
-      <img class="wide" src="assets/web/other/aire-jeux-enfants-02.jpg" alt="Coin balancelles pour les enfants au bord de la piscine, entouré de palmiers et de jardins" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/other/aire-jeux-enfants-01.jpg" alt="Balancelle et portique pour enfants près de la piscine à débordement" data-lightbox-trigger loading="lazy">
+      <img class="wide tall" src="assets/web/exterior-kitchen/exterior-kitchen-grill-sink.jpg" alt="Coin barbecue de la cuisine extérieure avec grill, évier et rangements en bois" data-i18n-alt="espaces.img1" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/exterior-kitchen/exterior-kitchen-view.jpg" alt="Cuisine extérieure vue depuis le bar, claustra en fer forgé" data-i18n-alt="espaces.img2" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/kitchen/kitchen-03-pool-view.jpg" alt="Cuisine intérieure grande ouverte sur la piscine et la terrasse" data-i18n-alt="espaces.img3" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/kitchen/kitchen-04-island-detail.jpg" alt="Îlot central de la cuisine en granit avec piano de cuisson 5 feux" data-i18n-alt="espaces.img4" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/kitchen/kitchen-01.jpg" alt="Table dressée avec vaisselle traditionnelle tunisienne en céramique" data-i18n-alt="espaces.img5" data-lightbox-trigger loading="lazy">
+      <img class="wide" src="assets/web/living/living-06-majlis-wide.jpg" alt="Salon majlis tunisois avec banquettes basses, coussins berbères et grandes baies vitrées" data-i18n-alt="espaces.img6" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/living/living-07-majlis-kitchen-view.jpg" alt="Salon ouvert sur la cuisine à travers une grande baie vitrée" data-i18n-alt="espaces.img7" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/living/living-03.jpg" alt="Grand salon aux tapis et fauteuils berbères colorés, sol en marbre" data-i18n-alt="espaces.img8" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/living/living-01.jpg" alt="Salon avec banquettes beiges, coussins brodés et rideaux voilés" data-i18n-alt="espaces.img9" data-lightbox-trigger loading="lazy">
+      <img class="wide" src="assets/web/patio/patio-02.jpg" alt="Patio central voûté avec fontaine en marbre et lustre artisanal" data-i18n-alt="espaces.img10" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/patio/patio-01-fountain.jpg" alt="Fontaine à étages du patio, vue en enfilade des arches jusqu'à la mer" data-i18n-alt="espaces.img11" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/patio/patio-03.jpg" alt="Patio et coin repas extérieur ombragé, colonnades en pierre" data-i18n-alt="espaces.img12" data-lightbox-trigger loading="lazy">
+      <img class="wide" src="assets/web/other/aire-jeux-enfants-02.jpg" alt="Coin balancelles pour les enfants au bord de la piscine, entouré de palmiers et de jardins" data-i18n-alt="espaces.img13" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/other/aire-jeux-enfants-01.jpg" alt="Balancelle et portique pour enfants près de la piscine à débordement" data-i18n-alt="espaces.img14" data-lightbox-trigger loading="lazy">
     </div>
   </div>
 </section>
@@ -357,19 +358,19 @@
 <section id="sejourner">
   <div class="wrap feature" data-reveal>
     <div class="feature__media">
-      <img src="assets/web/pool/pool-03.jpg" alt="Terrasse et piscine de Dar Aïcha, ambiance calme en basse saison, transats disposés au bord de l'eau" loading="lazy">
+      <img src="assets/web/pool/pool-03.jpg" alt="Terrasse et piscine de Dar Aïcha, ambiance calme en basse saison, transats disposés au bord de l'eau" data-i18n-alt="sejourner.img" loading="lazy">
     </div>
     <div>
-      <span class="kicker">Séjourner</span>
-      <h2>Location saisonnière en haute saison, maison d'hôtes le reste de l'année</h2>
-      <p>De juin à septembre, Dar Aïcha se réserve en location saisonnière exclusive — toute la villa pour votre groupe. En basse saison, la villa fonctionne en maison d'hôtes : réservez une ou plusieurs suites, avec petit-déjeuner et accès aux espaces communs.</p>
+      <span class="kicker" data-i18n="sejourner.kicker">Séjourner</span>
+      <h2 data-i18n="sejourner.h2">Location saisonnière en haute saison, maison d'hôtes le reste de l'année</h2>
+      <p data-i18n="sejourner.p">De juin à septembre, Dar Aïcha se réserve en location saisonnière exclusive — toute la villa pour votre groupe. En basse saison, la villa fonctionne en maison d'hôtes : réservez une ou plusieurs suites, avec petit-déjeuner et accès aux espaces communs.</p>
       <ul class="feature__list">
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Location saisonnière complète en haute saison (juin–septembre)</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Réservation par suite en maison d'hôtes le reste de l'année</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Arrivée à partir de 15h, départ à 11h</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Contact sur place : Fatma, hôte de la maison</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="sejourner.li1">Location saisonnière complète en haute saison (juin–septembre)</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="sejourner.li2">Réservation par suite en maison d'hôtes le reste de l'année</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="sejourner.li3">Arrivée à partir de 15h, départ à 11h</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="sejourner.li4">Contact sur place : Fatma, hôte de la maison</span></li>
       </ul>
-      <div style="margin-top: var(--space-8)"><a href="#reserver" class="btn btn--primary">Vérifier les disponibilités</a></div>
+      <div style="margin-top: var(--space-8)"><a href="#reserver" class="btn btn--primary" data-i18n="sejourner.cta">Vérifier les disponibilités</a></div>
     </div>
   </div>
 </section>
@@ -378,34 +379,34 @@
 <section id="evenements" class="section--dark">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <span class="kicker">Événements & réceptions</span>
-      <h2>Mariages, fiançailles et fêtes privées jusqu'à 250 invités</h2>
-      <p class="lede">Le domaine de Dar Aïcha se transforme pour vos grandes occasions : cérémonies au bord de la piscine à débordement, réceptions dans les jardins, soirées sous les oliviers. Grand parking privé et équipe de sécurité dédiée pendant l'événement.</p>
+      <span class="kicker" data-i18n="evenements.kicker">Événements & réceptions</span>
+      <h2 data-i18n="evenements.h2">Mariages, fiançailles et fêtes privées jusqu'à 250 invités</h2>
+      <p class="lede" data-i18n="evenements.lede">Le domaine de Dar Aïcha se transforme pour vos grandes occasions : cérémonies au bord de la piscine à débordement, réceptions dans les jardins, soirées sous les oliviers. Grand parking privé et équipe de sécurité dédiée pendant l'événement.</p>
     </div>
     <div class="gallery-grid" data-reveal style="grid-auto-rows: 280px;">
-      <img class="wide" src="assets/web/facebook/event-wedding-poolside.jpg" alt="Réception de mariage au bord de la piscine de Dar Aïcha avec décor lumineux en forme de cœur" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/pool/pool-08.jpg" alt="Espace piscine aménagé pour un événement, transats et parasols beiges" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/exterior/exterior-04-night.jpg" alt="Villa Dar Aïcha illuminée en soirée pour un événement" data-lightbox-trigger loading="lazy">
-      <img class="wide" src="assets/web/facebook/event-aerial-pool-lounge.jpg" alt="Vue aérienne de la terrasse piscine aménagée en salon lounge blanc pour une réception" data-lightbox-trigger loading="lazy">
+      <img class="wide" src="assets/web/facebook/event-wedding-poolside.jpg" alt="Réception de mariage au bord de la piscine de Dar Aïcha avec décor lumineux en forme de cœur" data-i18n-alt="evenements.img1" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/pool/pool-08.jpg" alt="Espace piscine aménagé pour un événement, transats et parasols beiges" data-i18n-alt="evenements.img2" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/exterior/exterior-04-night.jpg" alt="Villa Dar Aïcha illuminée en soirée pour un événement" data-i18n-alt="evenements.img3" data-lightbox-trigger loading="lazy">
+      <img class="wide" src="assets/web/facebook/event-aerial-pool-lounge.jpg" alt="Vue aérienne de la terrasse piscine aménagée en salon lounge blanc pour une réception" data-i18n-alt="evenements.img4" data-lightbox-trigger loading="lazy">
     </div>
     <div class="card-grid" data-reveal style="margin-top: var(--space-12);">
       <div class="info-card" style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15);">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        <h3>Jusqu'à 250 invités</h3>
-        <p>Capacité en mode dînatoire assis. Grand parking privé et équipe de sécurité incluse.</p>
+        <h3 data-i18n="evenements.card1h">Jusqu'à 250 invités</h3>
+        <p data-i18n="evenements.card1p">Capacité en mode dînatoire assis. Grand parking privé et équipe de sécurité incluse.</p>
       </div>
       <div class="info-card" style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15);">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l9 4.5v9L12 20l-9-4.5v-9z"/><path d="M3 6.5l9 4.5 9-4.5"/><path d="M12 11v9"/></svg>
-        <h3>De 3 500 à 5 500 TND</h3>
-        <p>Privatisation du domaine : à partir de 3 500 TND en basse saison, jusqu'à 5 500 TND en haute saison — devis personnalisé selon vos besoins.</p>
+        <h3 data-i18n="evenements.card2h">De 3 500 à 5 500 TND</h3>
+        <p data-i18n="evenements.card2p">Privatisation du domaine : à partir de 3 500 TND en basse saison, jusqu'à 5 500 TND en haute saison — devis personnalisé selon vos besoins.</p>
       </div>
       <div class="info-card" style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15);">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-        <h3>Organisation sur-mesure</h3>
-        <p>Accompagnement pour traiteur, décoration et logement des invités dans les suites de la villa.</p>
+        <h3 data-i18n="evenements.card3h">Organisation sur-mesure</h3>
+        <p data-i18n="evenements.card3p">Accompagnement pour traiteur, décoration et logement des invités dans les suites de la villa.</p>
       </div>
     </div>
-    <div style="margin-top: var(--space-10)"><a href="#reserver" class="btn btn--outline" style="border-color: rgba(255,255,255,0.4); color:#fff;">Demander un devis événement</a></div>
+    <div style="margin-top: var(--space-10)"><a href="#reserver" class="btn btn--outline" style="border-color: rgba(255,255,255,0.4); color:#fff;" data-i18n="evenements.cta">Demander un devis événement</a></div>
   </div>
 </section>
 
@@ -413,193 +414,193 @@
 <section id="privatisation" class="section--offset">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <span class="kicker">Séjours de groupe</span>
-      <h2>Privatisez Dar Aïcha pour votre retraite, atelier ou séminaire</h2>
-      <p class="lede">Dar Aïcha se privatise intégralement pour votre groupe, le temps de votre séjour : aucun autre client, aucun partage d'espace. Neuf suites, un grand salon, une cuisine équipée, un patio, une piscine à débordement et une oliveraie de 4 hectares s'ouvrent à vous seuls — le cadre idéal pour une retraite bien-être, un séjour oléicole, un atelier créatif ou un séminaire d'entreprise.</p>
+      <span class="kicker" data-i18n="priv.kicker">Séjours de groupe</span>
+      <h2 data-i18n="priv.h2">Privatisez Dar Aïcha pour votre retraite, atelier ou séminaire</h2>
+      <p class="lede" data-i18n="priv.lede">Dar Aïcha se privatise intégralement pour votre groupe, le temps de votre séjour : aucun autre client, aucun partage d'espace. Neuf suites, un grand salon, une cuisine équipée, un patio, une piscine à débordement et une oliveraie de 4 hectares s'ouvrent à vous seuls — le cadre idéal pour une retraite bien-être, un séjour oléicole, un atelier créatif ou un séminaire d'entreprise.</p>
     </div>
 
     <div class="theme-grid" data-reveal>
       <div class="info-card">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a5 5 0 0 1 5 5c0 2-1 3.5-2.5 5L12 15l-2.5-3C8 10.5 7 9 7 7a5 5 0 0 1 5-5z"/><path d="M12 15v7M8 22h8"/></svg>
-        <h3>Retraites bien-être & yoga</h3>
-        <p>Patio, jardin et oliveraie offrent plusieurs espaces naturels pour vos séances de yoga, méditation ou respiration. Notre équipe s'adapte à votre programme : horaires des repas, régimes spécifiques, silence à certaines heures.</p>
+        <h3 data-i18n="priv.theme1h">Retraites bien-être & yoga</h3>
+        <p data-i18n="priv.theme1p">Patio, jardin et oliveraie offrent plusieurs espaces naturels pour vos séances de yoga, méditation ou respiration. Notre équipe s'adapte à votre programme : horaires des repas, régimes spécifiques, silence à certaines heures.</p>
       </div>
       <div class="info-card">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C8 6 5 9 5 13a7 7 0 0 0 14 0c0-4-3-7-7-11z"/></svg>
-        <h3>Séjour oléicole</h3>
-        <p>Dormez au cœur même de l'oliveraie qui produit l'huile que vous dégusterez. Récolte, visite du domaine, trituration et dégustation de l'huile Koroneiki — un format de 5 à 7 nuits, idéal en basse saison (mi-octobre à janvier).</p>
+        <h3 data-i18n="priv.theme2h">Séjour oléicole</h3>
+        <p data-i18n="priv.theme2p">Dormez au cœur même de l'oliveraie qui produit l'huile que vous dégusterez. Récolte, visite du domaine, trituration et dégustation de l'huile Koroneiki — un format de 5 à 7 nuits, idéal en basse saison (mi-octobre à janvier).</p>
       </div>
       <div class="info-card">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-        <h3>Ateliers créatifs</h3>
-        <p>Lumière du Cap Bon, lignes de l'oliveraie, bleu de la piscine à débordement : un terrain d'inspiration pour un atelier de peinture, photographie ou écriture en résidence.</p>
+        <h3 data-i18n="priv.theme3h">Ateliers créatifs</h3>
+        <p data-i18n="priv.theme3p">Lumière du Cap Bon, lignes de l'oliveraie, bleu de la piscine à débordement : un terrain d'inspiration pour un atelier de peinture, photographie ou écriture en résidence.</p>
       </div>
       <div class="info-card">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        <h3>Séminaires d'entreprise</h3>
-        <p>Un cadre propice à la réflexion stratégique et à la cohésion d'équipe, loin de l'agitation urbaine — ateliers, activités de groupe et dîner préparé par un chef sur place.</p>
+        <h3 data-i18n="priv.theme4h">Séminaires d'entreprise</h3>
+        <p data-i18n="priv.theme4p">Un cadre propice à la réflexion stratégique et à la cohésion d'équipe, loin de l'agitation urbaine — ateliers, activités de groupe et dîner préparé par un chef sur place.</p>
       </div>
     </div>
 
     <div class="wrap feature" style="margin-top: var(--space-16);" data-reveal>
       <div class="feature__media">
-        <img src="assets/web/facebook/aerial-cover.jpg" alt="Vue aérienne de la propriété Dar Aïcha, idéale pour un séjour de groupe privatisé" loading="lazy">
+        <img src="assets/web/facebook/aerial-cover.jpg" alt="Vue aérienne de la propriété Dar Aïcha, idéale pour un séjour de groupe privatisé" data-i18n-alt="priv.imgAlt" loading="lazy">
       </div>
       <div>
-        <span class="kicker">Ce qui est inclus</span>
-        <h2>Toute la villa, rien qu'à vous</h2>
+        <span class="kicker" data-i18n="priv.inclusKicker">Ce qui est inclus</span>
+        <h2 data-i18n="priv.inclusH2">Toute la villa, rien qu'à vous</h2>
         <ul class="feature__list">
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Exclusivité totale de la villa et de ses espaces extérieurs (patio, jardin, piscine, oliveraie)</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Les 9 suites avec salle de bain privative</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> La cuisine entièrement équipée, utilisable par votre traiteur ou notre chef partenaire</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> L'accès à l'oliveraie de 4 hectares pour vos activités de plein air</li>
-          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Parking sécurisé et interlocuteur dédié sur place</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="priv.inc1">Exclusivité totale de la villa et de ses espaces extérieurs (patio, jardin, piscine, oliveraie)</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="priv.inc2">Les 9 suites avec salle de bain privative</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="priv.inc3">La cuisine entièrement équipée, utilisable par votre traiteur ou notre chef partenaire</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="priv.inc4">L'accès à l'oliveraie de 4 hectares pour vos activités de plein air</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="priv.inc5">Parking sécurisé et interlocuteur dédié sur place</span></li>
         </ul>
-        <p style="margin-top: var(--space-4); font-size: var(--text-sm); color: var(--color-text-muted);">En option : pension complète ou demi-pension avec chef privé, atelier de dégustation d'huile d'olive Koroneiki, transferts aéroport (Tunis-Carthage / Enfidha-Hammamet), excursions Cap Bon, intervenants locaux.</p>
+        <p style="margin-top: var(--space-4); font-size: var(--text-sm); color: var(--color-text-muted);" data-i18n="priv.options">En option : pension complète ou demi-pension avec chef privé, atelier de dégustation d'huile d'olive Koroneiki, transferts aéroport (Tunis-Carthage / Enfidha-Hammamet), excursions Cap Bon, intervenants locaux.</p>
       </div>
     </div>
 
     <div class="section-head section-head--center" style="margin-top: var(--space-16);" data-reveal>
-      <span class="kicker" style="justify-content:center">Formules & tarifs</span>
-      <h2>Tarif de base : 2 600 TND la nuit (≈ 765 €)</h2>
-      <p class="lede">Pour la villa entière, jusqu'à 20 personnes, hébergement et petit-déjeuner inclus (au-delà : +120 TND/nuit par personne supplémentaire, jusqu'à 25). Une place est offerte à l'enseignant ou à l'organisateur du groupe. Un devis précis vous est envoyé sous 24 à 48 heures.</p>
+      <span class="kicker" style="justify-content:center" data-i18n="priv.pricingKicker">Formules & tarifs</span>
+      <h2 data-i18n="priv.pricingH2">Tarif de base : 2 600 TND la nuit (≈ 765 €)</h2>
+      <p class="lede" data-i18n="priv.pricingLede">Pour la villa entière, jusqu'à 20 personnes, hébergement et petit-déjeuner inclus (au-delà : +120 TND/nuit par personne supplémentaire, jusqu'à 25). Une place est offerte à l'enseignant ou à l'organisateur du groupe. Un devis précis vous est envoyé sous 24 à 48 heures.</p>
     </div>
     <div class="card-grid" data-reveal>
       <div class="info-card">
-        <h3>Découverte</h3>
-        <p style="margin-bottom: var(--space-2); color: var(--color-text-muted); font-size: var(--text-sm);">3 à 4 nuits</p>
-        <div class="suite-card__price"><b>2 600 TND</b><span>/ nuit (≈ 765 €)</span></div>
-        <p style="margin-top: var(--space-3);">Hébergement + petit-déjeuner</p>
+        <h3 data-i18n="priv.tier1h">Découverte</h3>
+        <p style="margin-bottom: var(--space-2); color: var(--color-text-muted); font-size: var(--text-sm);" data-i18n="priv.tier1nights">3 à 4 nuits</p>
+        <div class="suite-card__price"><b>2 600 TND</b><span data-i18n="priv.tier1price">/ nuit (≈ 765 €)</span></div>
+        <p style="margin-top: var(--space-3);" data-i18n="priv.tier1desc">Hébergement + petit-déjeuner</p>
       </div>
       <div class="info-card">
-        <h3>Immersion</h3>
-        <p style="margin-bottom: var(--space-2); color: var(--color-text-muted); font-size: var(--text-sm);">5 à 6 nuits · −10 %</p>
-        <div class="suite-card__price"><b>2 340 TND</b><span>/ nuit (≈ 690 €)</span></div>
-        <p style="margin-top: var(--space-3);">Hébergement + petit-déjeuner, accès facilité aux activités du domaine</p>
+        <h3 data-i18n="priv.tier2h">Immersion</h3>
+        <p style="margin-bottom: var(--space-2); color: var(--color-text-muted); font-size: var(--text-sm);" data-i18n="priv.tier2nights">5 à 6 nuits · −10 %</p>
+        <div class="suite-card__price"><b>2 340 TND</b><span data-i18n="priv.tier2price">/ nuit (≈ 690 €)</span></div>
+        <p style="margin-top: var(--space-3);" data-i18n="priv.tier2desc">Hébergement + petit-déjeuner, accès facilité aux activités du domaine</p>
       </div>
       <div class="info-card">
-        <h3>Grand Séjour</h3>
-        <p style="margin-bottom: var(--space-2); color: var(--color-text-muted); font-size: var(--text-sm);">7 nuits et plus · −15 %</p>
-        <div class="suite-card__price"><b>2 210 TND</b><span>/ nuit (≈ 650 €)</span></div>
-        <p style="margin-top: var(--space-3);">Formule la plus adaptée aux retraites et séjours oléicoles ; pension complète disponible</p>
+        <h3 data-i18n="priv.tier3h">Grand Séjour</h3>
+        <p style="margin-bottom: var(--space-2); color: var(--color-text-muted); font-size: var(--text-sm);" data-i18n="priv.tier3nights">7 nuits et plus · −15 %</p>
+        <div class="suite-card__price"><b>2 210 TND</b><span data-i18n="priv.tier3price">/ nuit (≈ 650 €)</span></div>
+        <p style="margin-top: var(--space-3);" data-i18n="priv.tier3desc">Formule la plus adaptée aux retraites et séjours oléicoles ; pension complète disponible</p>
       </div>
     </div>
-    <p class="text-center" style="margin-top: var(--space-6); font-size: var(--text-sm); color: var(--color-text-muted);">Restauration en option : demi-pension 100 à 120 TND/personne/nuit, pension complète avec chef sur place 150 à 180 TND/personne/nuit. Acompte de 30 % à la réservation ; minimum 3 nuits pour toute privatisation.</p>
+    <p class="text-center" style="margin-top: var(--space-6); font-size: var(--text-sm); color: var(--color-text-muted);" data-i18n="priv.restauration">Restauration en option : demi-pension 100 à 120 TND/personne/nuit, pension complète avec chef sur place 150 à 180 TND/personne/nuit. Acompte de 30 % à la réservation ; minimum 3 nuits pour toute privatisation.</p>
 
     <div class="wrap wrap--narrow" style="margin-top: var(--space-16);" data-reveal>
       <div class="section-head section-head--center">
-        <span class="kicker" style="justify-content:center">Questions fréquentes</span>
-        <h2>Tout savoir sur la privatisation</h2>
+        <span class="kicker" style="justify-content:center" data-i18n="priv.faqKicker">Questions fréquentes</span>
+        <h2 data-i18n="priv.faqH2">Tout savoir sur la privatisation</h2>
       </div>
       <div class="faq-list">
         <details class="faq-item">
-          <summary>Quel est le nombre minimal de participants pour privatiser la villa ?</summary>
-          <p>La privatisation est ouverte à partir de 10 participants, jusqu'à 25 personnes en hébergement. Pour des groupes plus restreints, contactez-nous : une solution peut être étudiée.</p>
+          <summary data-i18n="priv.faq1q">Quel est le nombre minimal de participants pour privatiser la villa ?</summary>
+          <p data-i18n="priv.faq1a">La privatisation est ouverte à partir de 10 participants, jusqu'à 25 personnes en hébergement. Pour des groupes plus restreints, contactez-nous : une solution peut être étudiée.</p>
         </details>
         <details class="faq-item">
-          <summary>Peut-on organiser des cours de yoga, des ateliers ou des activités dans le jardin ou l'oliveraie ?</summary>
-          <p>Oui, le jardin, le patio et l'oliveraie sont librement accessibles pour vos séances et activités. Nous pouvons également mettre en relation votre groupe avec des intervenants locaux (yoga, cuisine tunisienne, artisanat, dégustation d'huile d'olive).</p>
+          <summary data-i18n="priv.faq2q">Peut-on organiser des cours de yoga, des ateliers ou des activités dans le jardin ou l'oliveraie ?</summary>
+          <p data-i18n="priv.faq2a">Oui, le jardin, le patio et l'oliveraie sont librement accessibles pour vos séances et activités. Nous pouvons également mettre en relation votre groupe avec des intervenants locaux (yoga, cuisine tunisienne, artisanat, dégustation d'huile d'olive).</p>
         </details>
         <details class="faq-item">
-          <summary>La restauration est-elle proposée sur place ?</summary>
-          <p>La cuisine est entièrement équipée et peut être utilisée par votre propre traiteur ou chef. Nous proposons également, en option, un chef partenaire pour la pension complète ou la demi-pension, ainsi que des ateliers de dégustation d'huile d'olive Koroneiki issue du domaine.</p>
+          <summary data-i18n="priv.faq3q">La restauration est-elle proposée sur place ?</summary>
+          <p data-i18n="priv.faq3a">La cuisine est entièrement équipée et peut être utilisée par votre propre traiteur ou chef. Nous proposons également, en option, un chef partenaire pour la pension complète ou la demi-pension, ainsi que des ateliers de dégustation d'huile d'olive Koroneiki issue du domaine.</p>
         </details>
         <details class="faq-item">
-          <summary>Quelle est la meilleure période pour un séjour oléicole ?</summary>
-          <p>La période de récolte des olives s'étend de la mi-octobre à fin janvier — c'est également notre basse saison, idéale pour privatiser la villa dans de bonnes conditions tarifaires.</p>
+          <summary data-i18n="priv.faq4q">Quelle est la meilleure période pour un séjour oléicole ?</summary>
+          <p data-i18n="priv.faq4a">La période de récolte des olives s'étend de la mi-octobre à fin janvier — c'est également notre basse saison, idéale pour privatiser la villa dans de bonnes conditions tarifaires.</p>
         </details>
         <details class="faq-item">
-          <summary>Proposez-vous des transferts depuis l'aéroport ?</summary>
-          <p>Oui, en option, depuis les aéroports de Tunis-Carthage et Enfidha-Hammamet.</p>
+          <summary data-i18n="priv.faq5q">Proposez-vous des transferts depuis l'aéroport ?</summary>
+          <p data-i18n="priv.faq5a">Oui, en option, depuis les aéroports de Tunis-Carthage et Enfidha-Hammamet.</p>
         </details>
       </div>
     </div>
 
-    <div style="margin-top: var(--space-10); text-align:center;" data-reveal><a href="mailto:daraichatazarka@gmail.com?subject=Demande%20de%20devis%20-%20Privatisation%20Dar%20A%C3%AFcha" class="btn btn--primary">Demander un devis de privatisation</a></div>
+    <div style="margin-top: var(--space-10); text-align:center;" data-reveal><a href="mailto:daraichatazarka@gmail.com?subject=Demande%20de%20devis%20-%20Privatisation%20Dar%20A%C3%AFcha" class="btn btn--primary" data-i18n="priv.finalCta">Demander un devis de privatisation</a></div>
   </div>
 </section>
 
 <!-- ============ HUILE D'OLIVE KORONEIKI ============ -->
 <section id="huile-olive">
   <div class="wrap" style="text-align:center; max-width: 760px; margin-inline:auto;" data-reveal>
-    <img src="assets/web/olive-oil/logo-domaine-dar-aicha.png" alt="Logo Domaine Dar Aïcha - Tazarka, Tunisie" style="width: 140px; height: 140px; margin: 0 auto var(--space-6); display:block;" loading="lazy">
-    <span class="kicker" style="justify-content:center">Notre marque</span>
-    <h2>Domaine Dar Aïcha — Huile d'Olive Vierge Extra</h2>
-    <p class="lede" style="margin-inline:auto;">Née de nos 4 hectares d'oliviers Koroneiki à Tazarka, notre huile d'olive vierge extra est cueillie à la main et pressée à froid pour préserver toute la richesse de ses arômes. Millésime 2024, conditionnée en 500ml et 250ml sous notre propre marque.</p>
+    <img src="assets/web/olive-oil/logo-domaine-dar-aicha.png" alt="Logo Domaine Dar Aïcha - Tazarka, Tunisie" data-i18n-alt="huile.logoAlt" style="width: 140px; height: 140px; margin: 0 auto var(--space-6); display:block;" loading="lazy">
+    <span class="kicker" style="justify-content:center" data-i18n="huile.kicker">Notre marque</span>
+    <h2 data-i18n="huile.h2">Domaine Dar Aïcha — Huile d'Olive Vierge Extra</h2>
+    <p class="lede" style="margin-inline:auto;" data-i18n="huile.lede">Née de nos 4 hectares d'oliviers Koroneiki à Tazarka, notre huile d'olive vierge extra est cueillie à la main et pressée à froid pour préserver toute la richesse de ses arômes. Millésime 2024, conditionnée en 500ml et 250ml sous notre propre marque.</p>
   </div>
 
   <div class="wrap feature" style="margin-top: var(--space-16);" data-reveal>
     <div class="feature__media">
-      <img src="assets/web/olive-oil/product-duo-sunset.jpg" alt="Bouteilles d'huile d'olive Domaine Dar Aïcha, formats 250ml et 500ml, au coucher du soleil sur la propriété de Tazarka" loading="lazy">
+      <img src="assets/web/olive-oil/product-duo-sunset.jpg" alt="Bouteilles d'huile d'olive Domaine Dar Aïcha, formats 250ml et 500ml, au coucher du soleil sur la propriété de Tazarka" data-i18n-alt="huile.imgAlt1" loading="lazy">
     </div>
     <div>
-      <span class="kicker">Une huile d'exception</span>
-      <h2>Un produit de très grande qualité, du champ à la bouteille</h2>
-      <p>Chaque bouteille porte l'empreinte de notre terroir : olives Koroneiki cueillies à maturité optimale, première pression à froid réalisée dans les 24 heures, sans additif. Le résultat : une huile fine, fruitée et légèrement poivrée, fidèle au savoir-faire familial du domaine.</p>
+      <span class="kicker" data-i18n="huile.kicker2">Une huile d'exception</span>
+      <h2 data-i18n="huile.h2b">Un produit de très grande qualité, du champ à la bouteille</h2>
+      <p data-i18n="huile.p1">Chaque bouteille porte l'empreinte de notre terroir : olives Koroneiki cueillies à maturité optimale, première pression à froid réalisée dans les 24 heures, sans additif. Le résultat : une huile fine, fruitée et légèrement poivrée, fidèle au savoir-faire familial du domaine.</p>
       <ul class="feature__list">
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Huile d'Olive Vierge Extra, variété Koroneiki</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Première pression à froid, cueillie à la main</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Millésime 2024 — disponible en 500ml et 250ml</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Produite et mise en bouteille en Tunisie</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="huile.li1">Huile d'Olive Vierge Extra, variété Koroneiki</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="huile.li2">Première pression à froid, cueillie à la main</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="huile.li3">Millésime 2024 — disponible en 500ml et 250ml</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="huile.li4">Produite et mise en bouteille en Tunisie</span></li>
       </ul>
-      <div style="margin-top: var(--space-6)"><a href="#reserver" class="btn btn--primary">Commander notre huile d'olive</a></div>
+      <div style="margin-top: var(--space-6)"><a href="#reserver" class="btn btn--primary" data-i18n="huile.cta1">Commander notre huile d'olive</a></div>
     </div>
   </div>
 
   <div class="wrap feature feature--reverse" style="margin-top: var(--space-16);" data-reveal>
     <div class="feature__media">
-      <img src="assets/web/facebook/olive-grove-panorama.jpg" alt="Panorama de l'oliveraie Koroneiki de la propriété avec la mer Méditerranée en arrière-plan" loading="lazy">
+      <img src="assets/web/facebook/olive-grove-panorama.jpg" alt="Panorama de l'oliveraie Koroneiki de la propriété avec la mer Méditerranée en arrière-plan" data-i18n-alt="huile.imgAlt2" loading="lazy">
     </div>
     <div>
-      <span class="kicker">Terroir & production</span>
-      <h2>4 hectares d'oliviers Koroneiki face à la mer</h2>
-      <p>Sur notre propriété agricole de Tazarka, une oliveraie de variété Koroneiki — cultivar grec réputé pour son huile fine et aromatique — s'étend entre le domaine et le littoral. Une production familiale, pensée pour une huile d'olive extra vierge de caractère.</p>
+      <span class="kicker" data-i18n="huile.kicker3">Terroir & production</span>
+      <h2 data-i18n="huile.h2c">4 hectares d'oliviers Koroneiki face à la mer</h2>
+      <p data-i18n="huile.p2">Sur notre propriété agricole de Tazarka, une oliveraie de variété Koroneiki — cultivar grec réputé pour son huile fine et aromatique — s'étend entre le domaine et le littoral. Une production familiale, pensée pour une huile d'olive extra vierge de caractère.</p>
       <ul class="feature__list">
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Variété Koroneiki, réputée pour sa richesse aromatique</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 4 hectares cultivés sur la propriété de Tazarka</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Récolte et pressage suivis par la famille</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="huile.li5">Variété Koroneiki, réputée pour sa richesse aromatique</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="huile.li6">4 hectares cultivés sur la propriété de Tazarka</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <span data-i18n="huile.li7">Récolte et pressage suivis par la famille</span></li>
       </ul>
     </div>
   </div>
 
   <div class="wrap" style="margin-top: var(--space-20);" data-reveal>
     <div class="section-head section-head--center">
-      <span class="kicker" style="justify-content:center">De l'olivier à la bouteille</span>
-      <h2>Notre process</h2>
+      <span class="kicker" style="justify-content:center" data-i18n="huile.kicker4">De l'olivier à la bouteille</span>
+      <h2 data-i18n="huile.h2d">Notre process</h2>
     </div>
     <div class="process-grid">
       <div class="process-step">
         <span class="process-step__num">01</span>
-        <h3>Culture</h3>
-        <p>Entretien des oliviers Koroneiki tout au long de l'année sur nos 4 hectares face à la mer.</p>
+        <h3 data-i18n="huile.step1h">Culture</h3>
+        <p data-i18n="huile.step1p">Entretien des oliviers Koroneiki tout au long de l'année sur nos 4 hectares face à la mer.</p>
       </div>
       <div class="process-step">
         <span class="process-step__num">02</span>
-        <h3>Récolte</h3>
-        <p>Cueillette des olives à maturité optimale pour préserver les arômes.</p>
+        <h3 data-i18n="huile.step2h">Récolte</h3>
+        <p data-i18n="huile.step2p">Cueillette des olives à maturité optimale pour préserver les arômes.</p>
       </div>
       <div class="process-step">
         <span class="process-step__num">03</span>
-        <h3>Pressage</h3>
-        <p>Extraction à froid pour une huile extra vierge de qualité.</p>
+        <h3 data-i18n="huile.step3h">Pressage</h3>
+        <p data-i18n="huile.step3p">Extraction à froid pour une huile extra vierge de qualité.</p>
       </div>
       <div class="process-step">
         <span class="process-step__num">04</span>
-        <h3>Mise en bouteille</h3>
-        <p>Conditionnement soigné sous notre marque, disponible sur demande auprès du domaine.</p>
+        <h3 data-i18n="huile.step4h">Mise en bouteille</h3>
+        <p data-i18n="huile.step4p">Conditionnement soigné sous notre marque, disponible sur demande auprès du domaine.</p>
       </div>
     </div>
   </div>
 
   <div class="wrap" style="margin-top: var(--space-20);" data-reveal>
     <div class="section-head section-head--center">
-      <span class="kicker" style="justify-content:center">Domaine Dar Aïcha en images</span>
-      <h2>Notre huile, mise en valeur</h2>
+      <span class="kicker" style="justify-content:center" data-i18n="huile.kicker5">Domaine Dar Aïcha en images</span>
+      <h2 data-i18n="huile.h2e">Notre huile, mise en valeur</h2>
     </div>
     <div class="gallery-grid">
-      <img src="assets/web/olive-oil/product-closeup-hedge.jpg" alt="Gros plan sur une bouteille d'huile d'olive Domaine Dar Aïcha, étiquette avec le logo de la propriété" data-lightbox-trigger loading="lazy">
-      <video src="assets/web/olive-oil/product-range-video.mp4" autoplay muted loop playsinline aria-label="Vidéo de présentation de la gamme d'huile d'olive Domaine Dar Aïcha, formats 500ml et 250ml"></video>
-      <img class="wide" src="assets/web/olive-oil/product-lifestyle-table.jpg" alt="Huile d'olive Domaine Dar Aïcha servie à table avec une salade de tomates et mozzarella" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/olive-oil/product-closeup-hedge.jpg" alt="Gros plan sur une bouteille d'huile d'olive Domaine Dar Aïcha, étiquette avec le logo de la propriété" data-i18n-alt="huile.img1" data-lightbox-trigger loading="lazy">
+      <video src="assets/web/olive-oil/product-range-video.mp4" autoplay muted loop playsinline aria-label="Vidéo de présentation de la gamme d'huile d'olive Domaine Dar Aïcha, formats 500ml et 250ml" data-i18n-aria="huile.videoAria"></video>
+      <img class="wide" src="assets/web/olive-oil/product-lifestyle-table.jpg" alt="Huile d'olive Domaine Dar Aïcha servie à table avec une salade de tomates et mozzarella" data-i18n-alt="huile.img2" data-lightbox-trigger loading="lazy">
     </div>
   </div>
 </section>
@@ -608,17 +609,17 @@
 <section id="region" class="section--offset">
   <div class="wrap">
     <div class="section-head" data-reveal>
-      <span class="kicker">La propriété & la région</span>
-      <h2>Tazarka, entre plages du Cap Bon et campagne de Nabeul</h2>
-      <p class="lede">La propriété s'étend sur 4 hectares à Tazarka, à proximité des plages de Maamoura et Nabeul, dans le gouvernorat de Nabeul (Cap Bon).</p>
+      <span class="kicker" data-i18n="region.kicker">La propriété & la région</span>
+      <h2 data-i18n="region.h2">Tazarka, entre plages du Cap Bon et campagne de Nabeul</h2>
+      <p class="lede" data-i18n="region.lede">La propriété s'étend sur 4 hectares à Tazarka, à proximité des plages de Maamoura et Nabeul, dans le gouvernorat de Nabeul (Cap Bon).</p>
     </div>
     <div class="gallery-grid" data-reveal>
-      <img class="wide tall" src="assets/web/facebook/aerial-cover.jpg" alt="Vue aérienne de la propriété de 4 hectares à Tazarka avec la villa, l'oliveraie et les jardins" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/other/backyard-garden.jpg" alt="Jardin arrière de la propriété avec vue sur l'oliveraie et la côte" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/exterior/exterior-06.jpg" alt="Jardins méditerranéens de la propriété Dar Aïcha" data-lightbox-trigger loading="lazy">
-      <img src="assets/web/exterior/exterior-10-palms.jpg" alt="Allée bordée de palmiers menant à la villa" data-lightbox-trigger loading="lazy">
-      <img class="wide" src="assets/web/facebook/facade-palms-wide.jpg" alt="Vue large de la façade de la villa entourée de palmiers" data-lightbox-trigger loading="lazy">
-      <img class="wide" src="assets/web/facebook/plage-tazarka.jpg" alt="Plage de sable fin et eaux turquoise à proximité de Tazarka" data-lightbox-trigger loading="lazy">
+      <img class="wide tall" src="assets/web/facebook/aerial-cover.jpg" alt="Vue aérienne de la propriété de 4 hectares à Tazarka avec la villa, l'oliveraie et les jardins" data-i18n-alt="region.img1" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/other/backyard-garden.jpg" alt="Jardin arrière de la propriété avec vue sur l'oliveraie et la côte" data-i18n-alt="region.img2" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/exterior/exterior-06.jpg" alt="Jardins méditerranéens de la propriété Dar Aïcha" data-i18n-alt="region.img3" data-lightbox-trigger loading="lazy">
+      <img src="assets/web/exterior/exterior-10-palms.jpg" alt="Allée bordée de palmiers menant à la villa" data-i18n-alt="region.img4" data-lightbox-trigger loading="lazy">
+      <img class="wide" src="assets/web/facebook/facade-palms-wide.jpg" alt="Vue large de la façade de la villa entourée de palmiers" data-i18n-alt="region.img5" data-lightbox-trigger loading="lazy">
+      <img class="wide" src="assets/web/facebook/plage-tazarka.jpg" alt="Plage de sable fin et eaux turquoise à proximité de Tazarka" data-i18n-alt="region.img6" data-lightbox-trigger loading="lazy">
     </div>
   </div>
 </section>
@@ -627,24 +628,24 @@
 <section id="avis">
   <div class="wrap">
     <div class="section-head section-head--center" data-reveal>
-      <span class="kicker" style="justify-content:center">Avis & témoignages</span>
-      <h2>La confiance de nos voyageurs</h2>
+      <span class="kicker" style="justify-content:center" data-i18n="avis.kicker">Avis & témoignages</span>
+      <h2 data-i18n="avis.h2">La confiance de nos voyageurs</h2>
     </div>
     <div class="rating-block" style="justify-content:center" data-reveal>
       <a class="rating-item" href="https://www.airbnb.fr/rooms/684927168147017811" target="_blank" rel="noopener">
-        <div><b>4,88 / 5</b><span>Airbnb · Superhost</span></div>
+        <div><b>4,88 / 5</b><span data-i18n="avis.r1">Airbnb · Superhost</span></div>
       </a>
       <a class="rating-item" href="https://www.vrbo.com/en-gb/p2160018a" target="_blank" rel="noopener">
-        <div><b>9,0 / 10</b><span>Vrbo — « Merveilleux »</span></div>
+        <div><b>9,0 / 10</b><span data-i18n="avis.r2">Vrbo — « Merveilleux »</span></div>
       </a>
       <a class="rating-item" href="https://www.abritel.fr/location-vacances/p2160018" target="_blank" rel="noopener">
-        <div><b>9,0 / 10</b><span>Abritel — « Merveilleux »</span></div>
+        <div><b>9,0 / 10</b><span data-i18n="avis.r3">Abritel — « Merveilleux »</span></div>
       </a>
     </div>
     <p class="text-center" style="max-width: 42rem; margin-inline:auto;" data-reveal>
-      Notes vérifiées par les plateformes de réservation, consultables directement sur
+      <span data-i18n="avis.disclaimer1">Notes vérifiées par les plateformes de réservation, consultables directement sur</span>
       <a href="https://www.airbnb.fr/rooms/684927168147017811" target="_blank" rel="noopener" style="color:var(--color-primary)">Airbnb</a>,
-      <a href="https://www.vrbo.com/en-gb/p2160018a" target="_blank" rel="noopener" style="color:var(--color-primary)">Vrbo</a> et
+      <a href="https://www.vrbo.com/en-gb/p2160018a" target="_blank" rel="noopener" style="color:var(--color-primary)">Vrbo</a> <span data-i18n="avis.disclaimer2">et</span>
       <a href="https://www.abritel.fr/location-vacances/p2160018" target="_blank" rel="noopener" style="color:var(--color-primary)">Abritel</a>.
     </p>
   </div>
@@ -654,55 +655,55 @@
 <section id="reserver" class="section--offset">
   <div class="wrap">
     <div class="section-head section-head--center" data-reveal>
-      <span class="kicker" style="justify-content:center">Réserver</span>
-      <h2>Demander un devis ou une disponibilité</h2>
-      <p class="lede">Séjour, groupe d'amis ou réception — décrivez votre projet, nous revenons vers vous rapidement par WhatsApp ou e-mail.</p>
+      <span class="kicker" style="justify-content:center" data-i18n="reserver.kicker">Réserver</span>
+      <h2 data-i18n="reserver.h2">Demander un devis ou une disponibilité</h2>
+      <p class="lede" data-i18n="reserver.lede">Séjour, groupe d'amis ou réception — décrivez votre projet, nous revenons vers vous rapidement par WhatsApp ou e-mail.</p>
     </div>
     <div class="booking-grid" data-reveal>
       <form data-booking-form>
         <div class="form-field">
-          <label for="nom">Nom complet</label>
+          <label for="nom" data-i18n="reserver.labelNom">Nom complet</label>
           <input type="text" id="nom" name="nom" required>
         </div>
         <div class="form-row">
           <div class="form-field">
-            <label for="arrivee">Date d'arrivée</label>
+            <label for="arrivee" data-i18n="reserver.labelArrivee">Date d'arrivée</label>
             <input type="date" id="arrivee" name="arrivee">
           </div>
           <div class="form-field">
-            <label for="depart">Date de départ</label>
+            <label for="depart" data-i18n="reserver.labelDepart">Date de départ</label>
             <input type="date" id="depart" name="depart">
           </div>
         </div>
         <div class="form-row">
           <div class="form-field">
-            <label for="voyageurs">Nombre de personnes</label>
+            <label for="voyageurs" data-i18n="reserver.labelVoyageurs">Nombre de personnes</label>
             <input type="number" id="voyageurs" name="voyageurs" min="1" max="25">
           </div>
           <div class="form-field">
-            <label for="type">Type de demande</label>
+            <label for="type" data-i18n="reserver.labelType">Type de demande</label>
             <select id="type" name="type">
-              <option>Séjour / location saisonnière</option>
-              <option>Maison d'hôtes (une suite)</option>
-              <option>Événement / réception</option>
-              <option>Privatisation / séjour de groupe</option>
-              <option>Huile d'olive Koroneiki</option>
+              <option value="Séjour / location saisonnière" data-i18n="reserver.opt1">Séjour / location saisonnière</option>
+              <option value="Maison d'hôtes (une suite)" data-i18n="reserver.opt2">Maison d'hôtes (une suite)</option>
+              <option value="Événement / réception" data-i18n="reserver.opt3">Événement / réception</option>
+              <option value="Privatisation / séjour de groupe" data-i18n="reserver.opt4">Privatisation / séjour de groupe</option>
+              <option value="Huile d'olive Koroneiki" data-i18n="reserver.opt5">Huile d'olive Koroneiki</option>
             </select>
           </div>
         </div>
         <div class="form-field">
-          <label for="message">Votre message</label>
+          <label for="message" data-i18n="reserver.labelMessage">Votre message</label>
           <textarea id="message" name="message" rows="4"></textarea>
         </div>
-        <button type="submit" class="btn btn--primary btn--block">Envoyer via WhatsApp</button>
+        <button type="submit" class="btn btn--primary btn--block" data-i18n="reserver.submit">Envoyer via WhatsApp</button>
       </form>
 
       <div>
-        <h3>Coordonnées</h3>
+        <h3 data-i18n="reserver.coordH3">Coordonnées</h3>
         <ul class="contact-list">
           <li>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.99.36 1.97.67 2.91a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.94.31 1.92.54 2.91.67A2 2 0 0 1 22 16.92z"/></svg>
-            <div>Réservations (Fatma, hôte de la maison) : <a href="tel:+21658989830">+216 58 989 830</a></div>
+            <div><span data-i18n="reserver.contact1">Réservations (Fatma, hôte de la maison) :</span> <a href="tel:+21658989830">+216 58 989 830</a></div>
           </li>
           <li>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
@@ -710,7 +711,7 @@
           </li>
           <li>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div>Tazarka, Korba, Gouvernorat de Nabeul, Tunisie</div>
+            <div data-i18n="reserver.contact3">Tazarka, Korba, Gouvernorat de Nabeul, Tunisie</div>
           </li>
         </ul>
         <div class="social-row">
@@ -733,15 +734,15 @@
 <section id="contact">
   <div class="wrap">
     <div class="section-head section-head--center" data-reveal>
-      <span class="kicker" style="justify-content:center">Nous trouver</span>
-      <h2>Tazarka, Korba — Gouvernorat de Nabeul</h2>
+      <span class="kicker" style="justify-content:center" data-i18n="contact.kicker">Nous trouver</span>
+      <h2 data-i18n="contact.h2">Tazarka, Korba — Gouvernorat de Nabeul</h2>
     </div>
     <div style="border-radius: var(--radius-lg); overflow:hidden; box-shadow: var(--shadow-md);" data-reveal>
       <iframe
         src="https://www.google.com/maps?q=Tazarka,Korba,Tunisia&output=embed"
         width="100%" height="420" style="border:0; display:block;"
         allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        title="Localisation de Dar Aïcha à Tazarka, Korba, Tunisie">
+        title="Localisation de Dar Aïcha à Tazarka, Korba, Tunisie" data-i18n-attr-title="contact.mapTitle">
       </iframe>
     </div>
   </div>
@@ -764,30 +765,30 @@
           </svg>
           <span class="brand-name" style="color: var(--color-text-inverse);">Dar Aïcha</span>
         </a>
-        <p style="max-width: 28ch;">Villa de 9 suites, oliveraie Koroneiki et réceptions privées à Tazarka, Cap Bon, Tunisie.</p>
+        <p style="max-width: 28ch;" data-i18n="footer.blurb">Villa de 9 suites, oliveraie Koroneiki et réceptions privées à Tazarka, Cap Bon, Tunisie.</p>
       </div>
       <div>
-        <h4>Explorer</h4>
+        <h4 data-i18n="footer.explorerH4">Explorer</h4>
         <ul>
-          <li><a href="#villa">La Villa</a></li>
-          <li><a href="#espaces">Nos espaces</a></li>
-          <li><a href="#sejourner">Séjourner</a></li>
-          <li><a href="#evenements">Événements</a></li>
-          <li><a href="#privatisation">Privatisation</a></li>
-          <li><a href="#huile-olive">Huile d'olive</a></li>
+          <li><a href="#villa" data-i18n="nav.villa">La Villa</a></li>
+          <li><a href="#espaces" data-i18n="nav.espaces">Nos espaces</a></li>
+          <li><a href="#sejourner" data-i18n="nav.sejourner">Séjourner</a></li>
+          <li><a href="#evenements" data-i18n="nav.evenements">Événements</a></li>
+          <li><a href="#privatisation" data-i18n="nav.privatisation">Privatisation</a></li>
+          <li><a href="#huile-olive" data-i18n="nav.huile">Huile d'olive</a></li>
         </ul>
       </div>
       <div>
-        <h4>Informations</h4>
+        <h4 data-i18n="footer.infosH4">Informations</h4>
         <ul>
-          <li><a href="#region">Propriété & région</a></li>
-          <li><a href="#avis">Avis</a></li>
-          <li><a href="#reserver">Réserver</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#region" data-i18n="nav.region">Propriété & région</a></li>
+          <li><a href="#avis" data-i18n="nav.avis">Avis</a></li>
+          <li><a href="#reserver" data-i18n="nav.reserver">Réserver</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4 data-i18n="footer.contactH4">Contact</h4>
         <ul>
           <li><a href="tel:+21658989830">+216 58 989 830</a></li>
           <li><a href="mailto:daraichatazarka@gmail.com">daraichatazarka@gmail.com</a></li>
@@ -797,20 +798,20 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span data-year></span> Dar Aïcha Tazarka. Tous droits réservés.</span>
-      <span>Site conçu pour Dar Aïcha — Mohcen Ben Amara</span>
+      <span><span data-i18n="footer.copyright1">©</span> <span data-year></span> <span data-i18n="footer.copyright2">Dar Aïcha Tazarka. Tous droits réservés.</span></span>
+      <span data-i18n="footer.credit">Site conçu pour Dar Aïcha — Mohcen Ben Amara</span>
     </div>
   </div>
 </footer>
 
 <!-- ============ WHATSAPP FLOAT ============ -->
-<a class="whatsapp-float" href="https://wa.me/68987717863" target="_blank" rel="noopener" aria-label="Contacter Dar Aïcha sur WhatsApp">
+<a class="whatsapp-float" href="https://wa.me/68987717863" target="_blank" rel="noopener" aria-label="Contacter Dar Aïcha sur WhatsApp" data-i18n-aria="whatsapp.aria">
   <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.52 3.62 1.42 5.13L2 22l5.13-1.35a9.83 9.83 0 0 0 4.91 1.31c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.79 14.02c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.13.11-1.83-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.79-4.15-4.94-4.35-.14-.2-1.19-1.58-1.19-3.01s.75-2.13 1.02-2.42c.26-.29.57-.36.77-.36.19 0 .38.01.55.01.18.01.42-.07.65.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.3.38-.43.51-.14.14-.29.28-.13.56.16.28.72 1.19 1.55 1.93 1.06.94 1.96 1.24 2.24 1.38.28.14.44.12.61-.06.17-.19.72-.83.91-1.12.19-.28.38-.23.63-.14.26.1 1.65.78 1.93.92.29.14.48.21.55.33.07.13.07.72-.17 1.4z"/></svg>
 </a>
 
 <!-- ============ LIGHTBOX ============ -->
 <div class="lightbox" data-lightbox>
-  <button class="lightbox__close" data-lightbox-close aria-label="Fermer">
+  <button class="lightbox__close" data-lightbox-close aria-label="Fermer" data-i18n-aria="lightbox.closeAria">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
   </button>
   <img src="" alt="">

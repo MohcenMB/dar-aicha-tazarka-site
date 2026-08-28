@@ -104,7 +104,7 @@
     const text = encodeURIComponent(
       `Bonjour, je suis ${nom}. Je souhaite une demande de devis pour : ${type}.\nArrivée : ${arrivee}\nDépart : ${depart}\nNombre de personnes : ${voyageurs}\nMessage : ${message}`
     );
-    window.open(`https://wa.me/21658686854?text=${text}`, '_blank');
+    window.open(`https://wa.me/68987717863?text=${text}`, '_blank');
   });
 })();
 

@@ -1,0 +1,32 @@
+# Dar Aïcha Tazarka — redirections 301 (refonte architecture site)
+# Anciennes URLs -> nouvelles URLs après restructuration multi-pages
+
+RewriteEngine On
+
+# Villa (fusion de 3 anciennes pages en une seule)
+RewriteRule ^villa\.html$ /villa-tazarka-cap-bon.html [R=301,L]
+RewriteRule ^espaces\.html$ /villa-tazarka-cap-bon.html [R=301,L]
+RewriteRule ^location-saisonniere-cap-bon\.html$ /villa-tazarka-cap-bon.html [R=301,L]
+
+# Mariages & événements
+RewriteRule ^mariages-evenements-tazarka\.html$ /mariage-evenement-villa-cap-bon.html [R=301,L]
+
+# Domaine & oliveraie
+RewriteRule ^huile-olive-koroneiki\.html$ /domaine-oliveraie-huile-olive-tazarka.html [R=301,L]
+
+# Tazarka & accès
+RewriteRule ^region-cap-bon\.html$ /tazarka-cap-bon-acces.html [R=301,L]
+
+# Sécurité / performance de base
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+</IfModule>

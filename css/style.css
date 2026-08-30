@@ -667,6 +667,45 @@ p + p { margin-top: var(--space-4); }
 .text-center { text-align: center; }
 .hidden { display: none !important; }
 
+/* ---------- Breadcrumb ---------- */
+.breadcrumb {
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+  padding-block: var(--space-5) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+.breadcrumb a { color: var(--color-text-muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--color-primary); }
+.breadcrumb .sep { opacity: .6; }
+.breadcrumb .current { color: var(--color-text); }
+
+/* ---------- Sub-page hero (banner) ---------- */
+.hero--page {
+  min-height: 46vh;
+  padding-block: var(--space-16) var(--space-12);
+  align-items: center;
+}
+.hero--page h1 { font-size: var(--text-3xl); max-width: 26ch; }
+.hero--page .hero__lede { max-width: 52ch; }
+
+/* ---------- Cross-link CTA within homepage sections ---------- */
+.section-more {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-6);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.section-more svg { transition: transform var(--transition-interactive); }
+.section-more:hover svg { transform: translateX(3px); }
+.section--dark .section-more { color: var(--color-gold); }
+
 /* ---------- Reveal animation ---------- */
 [data-reveal] {
   opacity: 0;

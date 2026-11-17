@@ -623,6 +623,12 @@ p + p { margin-top: var(--space-4); }
   font-size: var(--text-xs);
   color: color-mix(in oklab, var(--color-text-inverse) 60%, transparent);
 }
+.footer-partner {
+  margin: 0;
+  padding-top: var(--space-6);
+  font-size: var(--text-sm);
+}
+.footer-partner a { text-decoration: none; }
 
 /* ---------- WhatsApp float ---------- */
 .whatsapp-float {

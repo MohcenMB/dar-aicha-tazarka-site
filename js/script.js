@@ -249,7 +249,7 @@
     'villaPage.badge1': '9 en-suite bedrooms',
     'villaPage.badge2': 'Contemporary Tunisian architecture',
     'villaPage.badge3': 'Infinity pool',
-    'villaPage.h1': 'The Villa & its 9 Suites',
+    'villaPage.h1': 'Villa with a private pool in Cap Bon',
     'villaPage.lede': 'Discover Dar Aïcha\'s architecture and its 9 individually decorated en-suite bedrooms, between contemporary lines, local stone and traditional Tunisian craftsmanship.',
     'villaPage.cta1': 'Check Availability',
     'villaPage.archKicker': 'Architecture',

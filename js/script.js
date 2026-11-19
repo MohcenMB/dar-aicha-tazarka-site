@@ -576,6 +576,7 @@
     'contactPage.coordLede': 'Prefer a direct message? Choose the channel that suits you.',
     'contactPage.ctaWhatsapp': 'Message us on WhatsApp',
     'contactPage.contactAccueil': 'On-site host (Fatma):',
+    'contactPage.directions': 'Location and directions',
     'contactPage.k2': 'Before you write',
     'contactPage.h2_2': 'Discover our universe first',
     'contactPage.link1h': 'The villa',

@@ -418,7 +418,7 @@
     'evenementsPage.badge1': 'Up to 250 guests',
     'evenementsPage.badge2': 'Pool & 4-hectare gardens',
     'evenementsPage.badge3': 'Tazarka · Cap Bon',
-    'evenementsPage.h1': 'Weddings & Private Events in Tazarka, Cap Bon',
+    'evenementsPage.h1': 'Villa for weddings and private events in Cap Bon',
     'evenementsPage.lede': 'A 4-hectare property between olive grove and sea to celebrate a wedding, an engagement or a corporate event, for up to 250 guests.',
     'evenementsPage.cta1': 'Request an Event Quote',
     'evenementsPage.k1': 'Capacity & pricing',

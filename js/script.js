@@ -680,7 +680,7 @@
     'maisonHotesPage.badge1': 'From 255 TND/night',
     'maisonHotesPage.badge2': 'Breakfast included',
     'maisonHotesPage.badge3': 'Tazarka · Cap Bon',
-    'maisonHotesPage.h1': 'Dar Aïcha, a guest house on Cap Bon',
+    'maisonHotesPage.h1': 'Guest house in Tazarka, Cap Bon',
     'maisonHotesPage.lede': 'Outside the high tourist season, Villa Dar Aïcha operates as a guest house: individual rooms and suites for travellers, families or small groups, set in a working farm and Mediterranean landscape.',
     'maisonHotesPage.cta1': 'Request a quote',
     'maisonHotesPage.cta2': 'See the suites',

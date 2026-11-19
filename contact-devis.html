@@ -112,26 +112,25 @@
 
     <div class="booking-grid" data-reveal>
       <div>
-        <!-- TODO propriétaire : connecter ce formulaire à un service d'envoi réel (ex: Formspree, EmailJS, ou script serveur) avant mise en ligne -->
-        <form data-booking-form id="contact-form" action="#" data-form-placeholder="true">
+        <form id="contact-form" action="envoyer-devis.php" method="post">
           <div class="form-field">
             <label for="nom" data-i18n="contactPage.labelNom">Nom et prénom</label>
-            <input type="text" id="nom" name="nom" required>
+            <input type="text" id="nom" name="nom" maxlength="120" autocomplete="name" required>
           </div>
           <div class="form-row">
             <div class="form-field">
               <label for="email" data-i18n="contactPage.labelEmail">E-mail</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" id="email" name="email" maxlength="254" autocomplete="email" required>
             </div>
             <div class="form-field">
               <label for="telephone" data-i18n="contactPage.labelTelephone">Téléphone / WhatsApp</label>
-              <input type="tel" id="telephone" name="telephone">
+              <input type="tel" id="telephone" name="telephone" maxlength="40" autocomplete="tel">
             </div>
           </div>
           <div class="form-row">
             <div class="form-field">
               <label for="dates" data-i18n="contactPage.labelDates">Dates souhaitées</label>
-              <input type="text" id="dates" name="dates" placeholder="ex: 12 au 19 juillet 2027" data-i18n-placeholder="contactPage.placeholderDates">
+              <input type="text" id="dates" name="dates" maxlength="120" placeholder="ex: 12 au 19 juillet 2027" data-i18n-placeholder="contactPage.placeholderDates">
             </div>
             <div class="form-field">
               <label for="personnes" data-i18n="contactPage.labelPersonnes">Nombre de personnes</label>
@@ -150,14 +149,30 @@
           </div>
           <div class="form-field">
             <label for="message" data-i18n="contactPage.labelMessage">Message libre</label>
-            <textarea id="message" name="message" rows="4"></textarea>
+            <textarea id="message" name="message" rows="4" maxlength="5000"></textarea>
           </div>
-          <button type="submit" class="btn btn--primary btn--block" data-i18n="contactPage.submit">Envoyer ma demande</button>
+          <div hidden>
+            <label for="quote-website">Website</label>
+            <input type="text" id="quote-website" name="website" autocomplete="off" tabindex="-1">
+          </div>
+          <input type="hidden" name="token">
+          <div class="form-field hidden" id="quote-check">
+            <label for="quote-answer"><span data-i18n="contactPage.antispam">Vérification anti-spam :</span> <span id="quote-question"></span></label>
+            <input type="text" id="quote-answer" name="answer" inputmode="numeric" pattern="[0-9]{1,2}" maxlength="2" autocomplete="off" required>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block" data-i18n="contactPage.submit" disabled>Envoyer ma demande</button>
+          <div style="margin-top: var(--space-4);" role="alert" id="quote-errors">
+            <p class="hidden" data-quote-error="invalid" data-i18n="contactPage.formInvalid">Vérifiez les champs du formulaire, notamment l’adresse e-mail et le nombre de personnes (de 1 à 25).</p>
+            <p class="hidden" data-quote-error="challenge" data-i18n="contactPage.formChallenge">La vérification a échoué ou expiré. Répondez à la nouvelle question puis réessayez.</p>
+            <p class="hidden" data-quote-error="limited" data-i18n="contactPage.formLimited">Trop de tentatives. Réessayez plus tard ou contactez-nous par e-mail ou WhatsApp.</p>
+            <p class="hidden" data-quote-error="unavailable" data-i18n="contactPage.formUnavailable">Nous n’avons pas pu confirmer l’envoi. Vous pouvez réessayer ou nous écrire directement par e-mail ou WhatsApp.</p>
+          </div>
           <p style="margin-top: var(--space-4); font-size: var(--text-xs); color: var(--color-text-muted);" data-i18n="contactPage.rgpd">Les informations envoyées sont utilisées uniquement pour répondre à votre demande.</p>
         </form>
+        <noscript><p>Pour utiliser le formulaire, activez JavaScript ou <a href="mailto:daraichatazarka@gmail.com">écrivez-nous par e-mail</a>. You can also enable JavaScript or email us directly.</p></noscript>
 
         <div id="form-success" class="hidden" role="status">
-          <p data-i18n="contactPage.successMsg">Merci, votre demande a été prise en compte. Nous revenons vers vous rapidement.</p>
+          <p data-i18n="contactPage.successMsg">Merci, votre demande a bien été envoyée. Nous vous répondrons dès que possible.</p>
         </div>
       </div>
 
@@ -288,19 +303,7 @@
   <img src="" alt="">
 </div>
 
-<script src="js/script.js?v=contact-acces"></script>
-<!-- Script temporaire tant que le formulaire n'est pas connecté à un vrai service d'envoi (Formspree, EmailJS, etc.) -->
-<script>
-(function () {
-  var form = document.getElementById('contact-form');
-  var success = document.getElementById('form-success');
-  if (!form || !success) return;
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    form.style.display = 'none';
-    success.classList.remove('hidden');
-  });
-})();
-</script>
+<script src="js/script.js?v=contact-envoi"></script>
+<script src="js/devis.js?v=1" defer></script>
 </body>
 </html>

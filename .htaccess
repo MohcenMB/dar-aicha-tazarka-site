@@ -4,7 +4,10 @@
 RewriteEngine On
 
 # Une seule adresse : https://daraichatazarka.com (sans www, en HTTPS)
+# (www, http, et domaines secondaires .fr / .tn -> domaine principal)
+RewriteCond %{REQUEST_URI} !^/\.well-known/
 RewriteCond %{HTTP_HOST} ^www\. [NC,OR]
+RewriteCond %{HTTP_HOST} ^(www\.)?daraichatazarka\.(fr|tn)$ [NC,OR]
 RewriteCond %{SERVER_PORT} ^80$
 RewriteRule ^(.*)$ https://daraichatazarka.com/$1 [R=301,L]
 

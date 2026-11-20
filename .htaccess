@@ -13,18 +13,18 @@ RewriteCond %{THE_REQUEST} ^[A-Z]+\s/index\.html[\s?]
 RewriteRule ^index\.html$ https://daraichatazarka.com/ [R=301,L]
 
 # Villa (fusion de 3 anciennes pages en une seule)
-RewriteRule ^villa\.html$ /villa-tazarka-cap-bon.html [R=301,L]
-RewriteRule ^espaces\.html$ /villa-tazarka-cap-bon.html [R=301,L]
-RewriteRule ^location-saisonniere-cap-bon\.html$ /villa-tazarka-cap-bon.html [R=301,L]
+RewriteRule ^villa\.html$ https://daraichatazarka.com/villa-tazarka-cap-bon.html [R=301,L]
+RewriteRule ^espaces\.html$ https://daraichatazarka.com/villa-tazarka-cap-bon.html [R=301,L]
+RewriteRule ^location-saisonniere-cap-bon\.html$ https://daraichatazarka.com/villa-tazarka-cap-bon.html [R=301,L]
 
 # Mariages & événements
-RewriteRule ^mariages-evenements-tazarka\.html$ /mariage-evenement-villa-cap-bon.html [R=301,L]
+RewriteRule ^mariages-evenements-tazarka\.html$ https://daraichatazarka.com/mariage-evenement-villa-cap-bon.html [R=301,L]
 
 # Domaine & oliveraie
-RewriteRule ^huile-olive-koroneiki\.html$ /domaine-oliveraie-huile-olive-tazarka.html [R=301,L]
+RewriteRule ^huile-olive-koroneiki\.html$ https://daraichatazarka.com/domaine-oliveraie-huile-olive-tazarka.html [R=301,L]
 
 # Tazarka & accès
-RewriteRule ^region-cap-bon\.html$ /tazarka-cap-bon-acces.html [R=301,L]
+RewriteRule ^region-cap-bon\.html$ https://daraichatazarka.com/tazarka-cap-bon-acces.html [R=301,L]
 
 # Sécurité / performance de base
 <IfModule mod_headers.c>
